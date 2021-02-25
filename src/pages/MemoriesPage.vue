@@ -24,7 +24,7 @@ import {
   //   IonContent,
   IonList,
   IonItem,
-  IonButton,
+  // IonButton,
 } from "@ionic/vue";
 export default {
   // props: ["pageTitle"],
@@ -36,7 +36,7 @@ export default {
     // IonContent,
     IonList,
     IonItem,
-    IonButton,
+    // IonButton,
   },
 };
 </script>

@@ -3,7 +3,7 @@
     <ion-header>
       <ion-toolbar>
         <ion-buttons slot="start">
-          <ion-back-button></ion-back-button>
+          <ion-back-button :default-href="pageDefaultBackLink"></ion-back-button>
         </ion-buttons>
         <ion-title> {{ pageTitle }} </ion-title>
       </ion-toolbar>
@@ -24,7 +24,7 @@ import {
   IonButtons,
 } from "@ionic/vue";
 export default {
-  props: ["pageTitle"],
+  props: ["pageTitle", "pageDefaultBackLink"],
   components: {
     IonPage,
     IonHeader,
