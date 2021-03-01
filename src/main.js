@@ -3,7 +3,7 @@ import App from './App.vue'
 // * Layouts import Globaly for all pages
 import BaseLayout from './components/base/BaseLayout'
 import router from './router/index.js';
-
+import store from './store'
 import { IonicVue } from '@ionic/vue';
 
 /* Core CSS required for Ionic components to work properly */
@@ -29,10 +29,11 @@ import './theme/my.css';
 
 const app = createApp(App)
   .use(IonicVue)
-  .use(router);
+  .use(router)
+  .use(store);
 
 // * Register de baseLayout
-app.component('base-layout', BaseLayout)  
+app.component('base-layout', BaseLayout)
 
 router.isReady().then(() => {
   app.mount('#app');
